@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Bike</title>
+</head>
+<body>
+    <div class="container">
+        <div class="path"></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+        <div class="thumbnail" >
+            <li><img src="./img/bike1.png"  onclick="big('bike1.png')"></li>
+            <li><img src="./img/bike2.png"  onclick="big('bike2.png')"></li>
+            <li><img src="./img/bike3.png"  onclick="big('bike3.png')"></li>
+        </div>
+        <div class="big-img" class="big">
+            <img src="./img/bike3.png" >
+        </div>
+        <div class="content">
+            <p>&#x1F525;Let's ride &#x1F525; </p> <br>
+            <h1>Dont' Fear Dying<br>&nbsp;&nbsp; Fear Not Living</h1><br><br>
+            <h5>&#x1560E;Live Young & Live Free&#x1F49D;</h5>
+        </div>
+    </div>
+    <script>
+        function big(img){
+            document.querySelector('.big').src= img;
+        }
+        function path(color){
+            const path=document.querySelector('.path');
+            path.style.background = color;
+        }
+    </script>  
+</body>
+
+</html>
